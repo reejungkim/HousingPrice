@@ -8,7 +8,9 @@ This repository is divided into two parts
     -  random forest regression
     - support vector regression
     - gradient boosting regression
+    
   [See jupyter notebook](Kaggle%20-%20House%20Prices%20ML.ipynb)
    
 2. Housing pricing prediction using Tensorflow
+
   [See jupyter notebook](Boston%20housing%20price%20using%20tensorflow.ipynb)
