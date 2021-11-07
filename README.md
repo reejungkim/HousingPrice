@@ -1,5 +1,7 @@
 # HousingPrice
-Kaggle - predict housing prices
+[Kaggle - predict housing prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview)
+
+Evaluation method: Root-Mean-Squared-Error (RMSE)
 
 
 This repository is divided into two parts
