@@ -4,6 +4,10 @@
 Evaluation method: Root-Mean-Squared-Error (RMSE)
 
 
+<img src="img/kaggle.png" height="100" width="300">
+
+
+
 This repository is divided into two parts
 
 1. House pricing prediction using standard ML models installed in scikit-learn
