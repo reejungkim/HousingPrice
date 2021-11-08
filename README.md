@@ -24,3 +24,5 @@ This repository is divided into two parts
 ### 2. Housing pricing prediction using Tensorflow
 
   [See jupyter notebook](Boston%20housing%20price%20using%20tensorflow.ipynb)
+  
+<img src="img/learning_rate.png" height="200" width="400">
