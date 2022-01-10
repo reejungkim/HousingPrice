@@ -7,6 +7,10 @@ Evaluation method: Root-Mean-Squared-Error (RMSE)
 <img src="img/kaggle.png" height="100" width="500">
 
 
+```
+conda install -c conda-forge lightgbm 
+conda install -c conda-forge xgboost
+```
 
 This repository is divided into two parts
 
