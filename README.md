@@ -5,28 +5,26 @@
 [![Git page](http://img.shields.io/badge/-Portfolio-black?style=flat-square&logo=github&link=https://reejungkim.github.io/)](https://reejungkim.github.io/)
 <br></br>
 
-[Kaggle - predict housing prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview)
+This repository is divided into two parts
 
-Evaluation method: Root-Mean-Squared-Error (RMSE)
+[Kaggle - predict housing prices](https://www.kaggle.com/c/house-prices-advanced-regression-techniques/overview)
 
 
 <img src="img/kaggle.png" height="100" width="500">
 
 
+### 1. House pricing prediction using standard ML models installed in scikit-learn
 ```
 conda install -c conda-forge lightgbm 
 conda install -c conda-forge xgboost
 ```
 
-This repository is divided into two parts
-
-### 1. House pricing prediction using standard ML models installed in scikit-learn
-    - random forest regression
-    - support vector regression
-    - gradient boosting regression
+    - model candiates: random forest regression, support vector regression, gradient boosting regression
+    - preprocessor: label encoder, robust scaler, normalizer
+    - Evaluation method: Root-Mean-Squared-Error (RMSE)
     - Optimizer: GridSearchCV
-    - model interpretation: LIME
-  <img src='img/lime_img.png' height='300' width='350'>
+    - model interpretation: feature importance, local interpretable model-agnostic explanations (LIME)
+  <img src='img/lime_local_exp.png' height='200' width='350'>
    
     
   [See jupyter notebook](Kaggle%20-%20House%20Prices%20ML.ipynb)
