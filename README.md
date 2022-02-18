@@ -21,15 +21,14 @@ conda install -c conda-forge xgboost
 This repository is divided into two parts
 
 ### 1. House pricing prediction using standard ML models installed in scikit-learn
-    - random forest regression
-    - support vector regression
-    - gradient boosting regression
-    - Optimizer: GridSearchCV
-    - model interpretation: LIME
-  <img src='img/lime_img.png' height='300' width='350'>
-   
-    
+
   [See jupyter notebook](Kaggle%20-%20House%20Prices%20ML.ipynb)
+   - random forest regression
+   - support vector regression
+   - gradient boosting regression
+   - Optimizer: GridSearchCV
+   - model interpretation: LIME, SHAP, feature importance
+  <img src='img/lime_img.png' height='300' width='350'>
    
    - Final submission:  [Submission.csv](https://raw.githubusercontent.com/reejungkim/HousingPrice/master/submission.csv)
    - RMSE score: 0.13615
