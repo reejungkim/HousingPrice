@@ -28,9 +28,13 @@ This repository is divided into two parts
 - gradient boosting regression
 - Optimizer: GridSearchCV
 - model interpretation: LIME, SHAP, feature importance
+
   <img src='img/lime_img.png' height='300' width='350'>
-  <img srch='img/lime_local_exp.png' height='300' width='350'>
-  <img srch='img/shap.png' height='300' width='350'>
+
+  <img src='img/lime_local_exp.png' height='300' width='350'>
+
+  <img src='img/shap.png' height='300' width='350'>
+
 - Final submission: [Submission.csv](https://raw.githubusercontent.com/reejungkim/HousingPrice/master/submission.csv)
 - RMSE score: 0.13615
 
