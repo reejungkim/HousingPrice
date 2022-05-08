@@ -1,5 +1,9 @@
 
 
+from sklearn.compose import ColumnTransformer
+from sklearn.pipeline import Pipeline
+
+
 class FeatureSelector(BaseEstimator, TransformerMixin):
     def __init__(self, feature_names):
         self.feature_names = feature_names
@@ -11,16 +15,18 @@ class FeatureSelector(BaseEstimator, TransformerMixin):
         return X.loc[:, self.feature_names].copy(deep=True)
 
 
-num_pipeline = Pipeline(steps=[
-    ("num_selector", FeatureSelector(num_x_training)),
-    ("imputer", SimpleImputer(strategy="median")),
-    ("std_scaler", StandardScaler())
-])
+def num_pipeline:
+    Pipeline(steps=[
+        ("num_selector", FeatureSelector(num_x_training)),
+        ("imputer", SimpleImputer(strategy="median")),
+        ("std_scaler", StandardScaler())
+    ])
 
 
 # Defining the steps in the categorical pipeline
-cat_pipeline = Pipeline([
-    ('cat_selector', FeatureSelector(cat_x_training)),
-    ('imputer', SimpleImputer(strategy='most_frequent')),
-    ('one_hot_encoder', OneHotEncoder(sparse=False, handle_unknown='ignore'))
-])
+def cat_pipeline:
+    Pipeline([
+        ('cat_selector', FeatureSelector(cat_x_training)),
+        ('imputer', SimpleImputer(strategy='most_frequent')),
+        ('one_hot_encoder', OneHotEncoder(sparse=False, handle_unknown='ignore'))
+    ])
