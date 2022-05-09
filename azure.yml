@@ -1,0 +1,19 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
+code:
+  local_path: /Users/reejungkim/Documents/Git
+command: python Hosing price/functions.py --data ${{inputs.trainingData1}}
+# invoke completions (Ctrl+Space, Cmd+Space) to see the list of environments available
+environment:
+  image: docker.io/python
+# invoke completions (Ctrl+Space, Cmd+Space) to see the list of computes available
+compute: azureml:goazurego
+# This defines the input datasets to mount. The names of the items in inputs can be referenced in the command
+inputs:
+  trainingData1:
+    mode: mount
+    dataset:
+      local_path: <path-to-your-local-training-data>
+  trainingData2:
+    mode: mount
+    dataset:
+      path: <url-to-blob-container-with-data>
