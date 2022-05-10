@@ -19,7 +19,7 @@ conda install -c conda-forge xgboost
 
 This repository is divided into two parts
 
-### 1. House pricing prediction using standard ML models installed in scikit-learn
+### 1. House pricing prediction (supervised ML)
 
 [See jupyter notebook](Kaggle%20-%20House%20Prices%20ML.ipynb)
 
